@@ -41,5 +41,6 @@ supply the kubeconfig for the appropriate environment.""")
   if failed and options.exit_on_diff:
     sys.exit(2)
 
+
 if __name__ == '__main__':
   main()

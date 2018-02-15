@@ -4,7 +4,7 @@ WORKDIR /
 
 RUN apk update && \
    apk add py2-pip curl make && \
-   curl -o /bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.5.5/bin/linux/amd64/kubectl && \
+   curl -o /bin/kubectl https://storage.googleapis.com/kubernetes-release/release/v1.6.13/bin/linux/amd64/kubectl && \
    chmod u+x /bin/kubectl
 
 COPY . /tmp/kubediff/

@@ -28,7 +28,7 @@ endif
 	touch .ensure-pip
 
 $(VIRTUALENV_BIN)/pip: .ensure-virtualenv
-	virtualenv $(VIRTUALENV_DIR)
+	virtualenv -p /usr/bin/python2.7 $(VIRTUALENV_DIR)
 
 $(DEPS_UPTODATE): setup.py $(VIRTUALENV_BIN)/pip requirements.txt dev-requirements.txt
 	$(VIRTUALENV_BIN)/pip install -e .
